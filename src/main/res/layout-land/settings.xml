@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="40dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="700dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:text="OBD2 IP/Host"
+
+                        android:textColor="@color/ap_black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/etObd2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="obd2.lan"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="700dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="450dp"
+                        android:layout_height="wrap_content"
+                        android:text="OBD2 IP/Port"
+
+                        android:textColor="@color/ap_black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/etObd2Port"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:text="35000" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="700dp"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="550dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="550dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="450dp"
+                                android:layout_height="wrap_content"
+                                android:text="Horas reinicio Parcial 1"
+
+                                android:textColor="@color/ap_black"
+                                android:textSize="18dp" />
+
+                            <EditText
+                                android:id="@+id/etHParcial1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:text="4" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="550dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="450dp"
+                                android:layout_height="wrap_content"
+                                android:text="Horas reinicio parcial Bat"
+
+                                android:textColor="@color/ap_black"
+                                android:textSize="18dp" />
+
+                            <EditText
+                                android:id="@+id/etHParcialBatt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:text="4" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="550dp"
+                            android:layout_height="40dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="450dp"
+                                android:layout_height="wrap_content"
+                                android:text="Muestras max gráfica"
+
+                                android:textColor="@color/ap_black"
+                                android:textSize="18dp" />
+
+                            <EditText
+                                android:id="@+id/etPlotRecordsMax"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:text="200" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/appicon" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="700dp"
+                    android:layout_height="40dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="MQTT Host"
+
+                        android:textColor="@color/ap_black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/etMqttHost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:text="tcp://farmer.cloudmqtt.com:18507" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="700dp"
+                    android:layout_height="40dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="MQTT User"
+
+                        android:textColor="@color/ap_black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/etMqttUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:text="user" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:text="MQTT Pass"
+
+                        android:textColor="@color/ap_black"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/etMqttPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:text="pass" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="700dp"
+                    android:layout_height="40dp"
+
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/swAutoStart"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Auto iniciar APP"
+
+                        android:textOff="No"
+                        android:textOn="Si"
+                        android:textSize="18dp" />
+
+                    <Switch
+                        android:id="@+id/swAutoStartObd"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+
+                        android:text="Auto iniciar OBD2"
+                        android:textOff="No"
+                        android:textOn="Si"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="700dp"
+                    android:layout_height="40dp"
+
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/swFastOBD"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="OBD2 Alta velocidad "
+
+                        android:textOff="No"
+                        android:textOn="Si"
+                        android:textSize="20dp" />
+
+                    <Switch
+                        android:id="@+id/swMQTT"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:text="MQTT"
+
+                        android:textOff="No"
+                        android:textOn="Si"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="700dp"
+                    android:layout_height="40dp"
+
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/swGrabarTramasOBD"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:text="Grabar tramas OBD"
+
+                        android:textOff="No"
+                        android:textOn="Si"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:layout_weight="1"
+                        android:text="MQTT intervalo"
+                        android:textColor="@color/ap_black" />
+
+                    <EditText
+                        android:id="@+id/etMqttInterval"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="number" />
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:layout_weight="1"
+                        android:text="seg"
+                        android:textColor="@color/ap_black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonExit"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickSalir"
+                android:text="EXIT" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickSave"
+                android:text="SAVE" />
+
+            <Button
+                android:id="@+id/buttonUpdate"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickUpdate"
+                android:text="Update" />
+
+            <Button
+                android:id="@+id/buttonBusLogData"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickLogBus"
+                android:text="Bus" />
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvMarquee"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textColor="#ff4500"
+            android:text="  IoniqID desarrollada por EA4GKQ. Gracias a @WE_Koyote, @Bisha3, @JASimancas y @Smoje79 por vuestra colaboración.Estamos en el canal de Telegram https://t.me/ioniqev" />
+    </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
